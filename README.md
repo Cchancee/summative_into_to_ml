@@ -13,13 +13,15 @@ The goal was to test traditional ML models vs Neural Networks in classification 
 
 ## Findings
 
-| Model                        | Optimizer | Reg. | Layers | Epochs | Acc. | F1   | Recall | Precision |
-|-----------------------------|-----------|------|--------|--------|------|------|--------|-----------|
-| NN (Baseline)               | Adam      | None | 2      | 20     | 0.36 | 0.35 | 0.37   | 0.38      |
-| NN (Optimized - Adam)       | Adam      | L2   | 6      | 100    | 0.60 | 0.59 | 0.60   | 0.61      |
-| NN (Optimized - RMSprop)    | RMSprop   | L2   | 3      | 30     | 0.52 | 0.50 | 0.51   | 0.53      |
-| NN (Optimized - SGD)        | SGD       | L2   | 3      | 30     | 0.47 | 0.46 | 0.45   | 0.48      |
-| Logistic Regression (ML)    | -         | L1/L2| -      | -      | 0.39 | 0.37 | 0.38   | 0.40      |
+## Findings
+
+| Model                        | Optimizer | Reg. | Layers | Epochs | Acc.  | F1    | Recall | Precision |
+|-----------------------------|-----------|------|--------|--------|-------|-------|--------|-----------|
+| NN (Baseline)               | Adam      | None | 2      | 20     | 0.29  | 0.16  | 0.21   | 0.14      |
+| NN (Optimized - Adam)       | Adam      | L2   | 6      | 100    | 0.14  | 0.02  | 0.07   | 0.01      |
+| NN (Optimized - RMSprop)    | RMSprop   | L2   | 3      | 30     | 0.14  | 0.02  | 0.07   | 0.01      |
+| NN (Optimized - SGD)        | SGD       | L2   | 3      | 30     | 0.19  | 0.07  | 0.14   | 0.05      |
+| Logistic Regression (ML)    | -         | L1/L2| -      | -      | 0.43  | 0.36  | 0.41   | 0.34      |
 
 
 ## Summary of Best Combo
